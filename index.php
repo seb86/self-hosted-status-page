@@ -7,7 +7,7 @@ include_once( 'functions.php' );
 <html lang="en" data-theme="emerald">
     <head>
         <meta charset="UTF-8">
-        <meta name="google-site-verification" content="<?php echo $google_site_verification; ?>">
+        <?php if ( ! empty( $google_site_verification ) ) : ?><meta name="google-site-verification" content="<?php echo $google_site_verification; ?>"><?php endif; ?> 
         <meta name="referrer" content="same-origin">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
