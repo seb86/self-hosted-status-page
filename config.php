@@ -5,4 +5,6 @@ $site_title = ''; // Set the site title. No need to put "Status" at the end as i
 
 $days_to_display = '7'; // Set how many days you wish to display from records. Default is 7
 
-$header_bg = 'bg-blue-500';
+
+$recipient_email    = ''; // Set the recipient email sending the notification
+$notification_email = ''; // Set the email receiving the notification

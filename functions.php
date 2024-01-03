@@ -82,10 +82,10 @@ function log_url_status($name, $status, $log_file) {
 
         // If the status is down, send an email notification
         if ($status === 'DOWN') {
-            $recipient_email = 'sebastien@cocartapi.com'; // Set your recipient email address
+            $recipient_email = $recipient_email;
             $subject         = 'URL Status Alert';
             $message         = "The status of $name is DOWN.\n\nLog Entry: $log_entry";
-            $headers         = 'From: hello@cocartapi.com'; // Set your email address
+            $headers         = 'From: ' . $notification_email;
 
             mail($recipient_email, $subject, $message, $headers);
         }
